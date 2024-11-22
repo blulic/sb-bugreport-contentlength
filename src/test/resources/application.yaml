@@ -1,0 +1,9 @@
+management:
+  endpoint:
+    logfile:
+      enabled: true
+      external-file: ./log/loremipsum.log
+  endpoints:
+    web:
+      exposure:
+        include: logfile

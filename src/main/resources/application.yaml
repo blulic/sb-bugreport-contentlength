@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: content-length-issue-sb336
+server:
+  port:
+    9080

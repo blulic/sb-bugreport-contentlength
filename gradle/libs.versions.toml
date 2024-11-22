@@ -1,0 +1,7 @@
+[versions]
+lombokPlugin = '8.11'
+springBootPlugin = '3.3.6'
+
+[plugins]
+springBoot = { id = 'org.springframework.boot', version.ref = 'springBootPlugin' }
+lombok = { id = 'io.freefair.lombok', version.ref = 'lombokPlugin' }

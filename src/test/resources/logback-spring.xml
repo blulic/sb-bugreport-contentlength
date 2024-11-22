@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <!-- Console Appender -->
+  <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Application Specific Logging -->
+  <logger name="eu.blulic.report" level="DEBUG" />
+
+  <!-- Framework Logging -->
+  <logger name="org.springframework" level="INFO" />
+  <logger name="org.springframework.web" level="INFO" />
+
+  <!-- Log Levels -->
+  <root level="INFO">
+    <appender-ref ref="Console" />
+  </root>
+</configuration>
